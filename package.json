@@ -1,0 +1,35 @@
+{
+  "name": "test_bluecoding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "check": "tsc",
+    "docs": "npm run clean:docs && typedoc --plugin typedoc-plugin-missing-exports --logLevel Error",
+    "clean:docs": "rimraf docs",
+    "coverage": "vitest run --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "@types/puppeteer": "^5.4.5",
+    "c8": "^7.11.0",
+    "rimraf": "^3.0.2",
+    "typedoc": "^0.22.13",
+    "typedoc-plugin-missing-exports": "^0.22.6",
+    "typescript": "^4.6.2",
+    "vite": "^2.8.6",
+    "vitest": "^0.6.1"
+  },
+  "dependencies": {
+    "fastify": "^3.27.4",
+    "lowdb": "^3.0.0",
+    "nanoid": "^3.3.1",
+    "node-fetch": "^3.2.3",
+    "puppeteer": "^13.5.1",
+    "valid-url": "^1.0.9"
+  }
+}
