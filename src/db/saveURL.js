@@ -13,8 +13,14 @@ await db.read()
 db.data ||= { urls: [] }
 
 const saveURL = async (id, title, url) => {
+
     db.data.urls.push({ id, title, url })
     await db.write()
+}
+
+const getAllURLs = async () => {
+    await db.read()
+    return db.data.urls
 }
 
 export default saveURL
