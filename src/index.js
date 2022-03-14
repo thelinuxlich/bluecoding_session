@@ -26,7 +26,7 @@ server.post('/shorten', async (/** @type Request */ request, /** @type Reply */ 
             reply.code(200).send({
                 id,
                 title,
-                url
+                url: `https://bit.ly/${id}`
             })
         } else {
             reply.code(400).send("Bad URL parameter.")

@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "server": "node src/index.js",
     "test": "vitest",
     "check": "tsc",
     "docs": "npm run clean:docs && typedoc --plugin typedoc-plugin-missing-exports --logLevel Error",
